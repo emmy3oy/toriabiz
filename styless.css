@@ -1,0 +1,385 @@
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(2.4rem + 1vw);
+    --special-color: #6e92db;
+    --background-color:#243f8b;
+    --grey-text: #462546;
+}
+h1{
+    font-size: var(--header1);
+}
+li,
+label, 
+input, 
+a,
+p{
+    font-size: 2rem;
+}
+button{
+    padding: 2rem 6rem;
+    background: var(--special-color);
+    border: none;
+    color:white;
+    font-size: 1.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 400;
+    margin: 4rem;
+}
+h2{
+    font-size: var(--header2);
+}
+h3{
+    font-size: var(--header3);
+}
+h4,h5{
+    font-size: var(--header4);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.active{
+    background: var(--grey-text);
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+}
+/* Nav Section */
+.intro-text {
+    color: white;
+}
+.main-head{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #1c1d1f;
+    color: white;
+    
+    }
+.main-head a{
+    color: white;
+}
+#logo{
+    flex: 1 1 20rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}  
+nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem 0rem;
+    flex-wrap: wrap;
+    position: sticky;
+}
+.nav-link{
+    display: flex;
+    justify-content: space-around;
+    flex: 1 1 40rem;
+    
+}   
+#intro{ 
+    min-height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), 
+                url(/Images/pexels-canva-studio-3153198\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 25%;
+} 
+#intro p{
+    padding: 5rem;
+}
+.intro-text{
+    flex: 1 1 20rem;
+}
+.intro-text p{
+    color: var(--special-color);
+}
+.intro-image{
+    flex: 1 1 20rem;
+
+ }
+.intro-pic{
+    min-height: 90vh;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Head section*/
+.head{
+    flex:1 1 25rem;
+    min-height:40vh;
+    margin: 2rem 5rem;
+    width: 85%;
+    }
+.head h5{
+    padding: 2rem;
+    }
+.head p{
+  padding: 2rem;
+    }
+.heads{
+    margin: auto;
+    min-height: 50vh;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    }
+#num{
+    list-style:circle;
+    }
+#enquires{
+    min-height: 30vh;
+    padding: 2rem 5rem;
+    }
+.top {
+    background-color: var(--background-color);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+.enquires{
+    padding: 2rem 2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: auto 70%;
+    text-align: center;
+    border-radius: 20%;
+    }
+footer{
+    background:var(--background-color);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    }
+
+
+    /*Payment HTML Page */
+.payment{
+    background-color: white;
+    color: black;
+    margin: auto;
+    padding: 2rem 4rem;
+    width:70%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.images{
+    display: flex;
+    padding: 2rem 5rem;
+}
+small{
+    color:green;
+    font-size: 10px
+}
+.imaged{
+    display: flex;
+    flex: 1 1 40rem;
+}
+.text{
+    margin-left: 6rem;
+    color: blue;
+    text-decoration: underline;
+}
+.text2{
+    margin-left: 6rem;
+    color: lightcoral;
+    text-decoration: underline;
+}
+.instr{
+    color: var(--special-color)
+}
+
+/*About Us Section*/
+.services{
+    min-height: 6vh;
+    padding: 5rem 6rem;
+    margin: 5rem;
+    width: 75%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    flex-wrap: wrap;
+    background-color: rgb(243, 239, 239);
+    }
+.services h5{
+    padding: 9rem;
+}
+.services hr{
+    width: 50%;
+    display: flex;
+    }
+.about h3{
+    background: var(--grey-text);
+    color: white;
+    padding: 3rem 2rem;
+    width: 100%;
+
+}
+.about h5{
+    padding-top: 8rem;
+}
+/* Contact session */
+
+#contact h4{
+    color: var(--special-color);
+    padding: 7rem;
+    text-decoration:underline
+}
+#contact{
+    margin: 2rem 5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info{
+    width: 70%;
+    margin: 6rem;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 2rem 8rem;
+    background: #243f8b;
+    border-radius: 2rem;    
+}
+label, input, textarea {
+    margin:2rem;
+}
+/* HIRE SECTION*/
+.hires{
+    min-height: 60vh;
+}
+.hires h2{ 
+    padding: 2rem 5rem;
+    margin-bottom: 7rem;
+    color: var(--special-color);
+}
+
+.plans{
+    min-height: 70%;
+    margin-left: 10%;
+}
+.rid{
+    color:var(--background-color);
+}
+
+.tables{
+    flex-direction: column;    
+    flex-wrap: wrap;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 3rem 5rem;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    width: 100%;
+    margin: 2rem 5rem;
+
+}
+
+#price{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#price small{
+    font-size: 1.5rem;
+}
+.plans{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+#plan h3{
+    margin-left: 40%;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.mail{
+    text-align: right;
+}
+
+
+
+/*Media Screen*/
+
+
+@media screen and (max-width: 932px) {
+
+    html{
+        font-size:50%; 
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+.payment{
+    font-size: 45%;
+    width: 100%;
+    height: 100%;
+    margin: 2rem 4rem;
+}
+.images img{
+    width: 90%;
+}
+.enquires h4 {
+    font-size: 2rem;
+}
+.tables{
+    text-align: center;
+}
+.mail{
+    display: none;
+}
+}
+
+
+
+
+
+
